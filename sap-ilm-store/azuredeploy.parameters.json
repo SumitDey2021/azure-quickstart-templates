@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "AzureADAppPrincipalID": {
-      "value": "b7fbf4b5-c6ea-4bc4-b399-ce0c42987896"
+      "value": ""
     }
   }
 }
