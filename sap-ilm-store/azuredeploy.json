@@ -202,13 +202,11 @@
                       "Microsoft.Storage/storageAccounts/blobServices/containers/write",
                       "Microsoft.Storage/storageAccounts/blobServices/containers/delete"
                     ],
-                    "notActions": [],
                     "dataActions": [
                       "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
                       "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
                       "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete"
-                    ],
-                    "notDataActions": []
+                    ]
                   }
                 ],
                 "assignableScopes": [
