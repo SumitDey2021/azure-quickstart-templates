@@ -1,0 +1,9 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "AzureADAppPrincipalID": {
+      "value": "b7fbf4b5-c6ea-4bc4-b399-ce0c42987896"
+    }
+  }
+}
