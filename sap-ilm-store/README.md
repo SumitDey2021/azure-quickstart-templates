@@ -1,5 +1,38 @@
-Scripts: 
-This template deploys a Microsoft Azure Storage Account which can be used as a SAP ILM Store. It also creates a Custom Role with the required permissions and assigns the Service Prinicple to it so that it can be used by the SAP ILM Store. For more information about SAP ILM Store, see XXX.
+# SAP ILM Store
 
-Disclaimer: 
-THE SCRIPTS ARE PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
+![Azure Public Test Date](https://azurequickstartsservice.blob.core.windows.net/badges/path-to-sample/PublicLastTestDate.svg)
+![Azure Public Test Result](https://azurequickstartsservice.blob.core.windows.net/badges/path-to-sample/PublicDeployment.svg)
+
+![Azure US Gov Last Test Date](https://azurequickstartsservice.blob.core.windows.net/badges/path-to-sample/FairfaxLastTestDate.svg)
+![Azure US Gov Last Test Result](https://azurequickstartsservice.blob.core.windows.net/badges/path-to-sample/FairfaxDeployment.svg)
+
+![Best Practice Check](https://azurequickstartsservice.blob.core.windows.net/badges/path-to-sample/BestPracticeResult.svg)
+![Cred Scan Check](https://azurequickstartsservice.blob.core.windows.net/badges/path-to-sample/CredScanResult.svg)
+
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fpath-to-sample%2Fazuredeploy.json)
+[![Deploy To Azure US Gov](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.svg?sanitize=true)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fpath-to-sample%2Fazuredeploy.json)
+[![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fpath-to-sample%2Fazuredeploy.json)
+
+This template deploys a SAP ILM Store on a Microsoft Azure Storage Account. The SAP ILM Store is a **description**. For more information about SAP ILM Store, see **link**.
+
+## Overview and deployed resources
+
+The following steps are executed as a part of the solution
+
++ Deployment of a Microsoft Azure Storage Account
++ Creation of a Custom Role for restricting access to the Microsoft Azure Storage Account
++ Assignment of the Custom Role to a Microsoft Azure Active Directly Application
+
+## Prerequisites
+
+None
+
+## Deployment steps
+
+You can click the "deploy to Azure" button at the beginning of this document.
+
+## Notes
+
+The scripts are provided as is without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, mechantability, or non-infringement.
+
+`Tags: SAP, ILM, Store`
