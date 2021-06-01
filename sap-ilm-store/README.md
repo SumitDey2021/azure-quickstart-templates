@@ -29,7 +29,7 @@ None
 
 ## Deployment steps
 
-Click the ![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true) button at the beginning of this document.
+Click the ![Deploy](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true) button at the beginning of this document.
 
 For the parameter **"Principal ID of the Azure Active Directory Application"**, run the following command to get the Principal ID. 
 Replace `name-of-service-principal` with the name of the Azure Active Directory Application.
