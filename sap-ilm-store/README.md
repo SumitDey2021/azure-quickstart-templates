@@ -13,7 +13,7 @@
 [![Deploy To Azure US Gov](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.svg?sanitize=true)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fpath-to-sample%2Fazuredeploy.json)
 [![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fpath-to-sample%2Fazuredeploy.json)
 
-This template deploys a SAP Information Lifecycle Magagement (ILM) Store on a Microsoft Azure Storage Account. The SAP ILM Store is a **!!description!!**. For more information about SAP ILM Store, refer to the [SAP Help Portal!](https://help.sap.com/viewer/7ce8e5dc89d7407e8baa9de7b775f31f/703%20SP27/en-US).
+This template deploys a SAP Information Lifecycle Magagement (ILM) Store on a Microsoft Azure Storage Account. The SAP ILM Store is a **!!description!!**. For more information about SAP ILM Store, refer to the [SAP Help Portal](https://help.sap.com/viewer/7ce8e5dc89d7407e8baa9de7b775f31f/703%20SP27/en-US).
 
 ## Overview and deployed resources
 
