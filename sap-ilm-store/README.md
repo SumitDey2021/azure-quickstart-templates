@@ -31,6 +31,14 @@ None
 
 Click the "Deploy to Azure" button at the beginning of this document.
 
+**Note** For the parameter "Principal ID of the Azure Active Directory Application", run the following command to get the Principal ID. 
+Replace "name-of-service-principal" with the name of the Azure Active Directory Application.
+
+Command line:
+az ad sp list --display-name “name-of-service-principal” --query "[].objectId" --output tsv
+PowerShell:
+(Get-AzADServicePrincipal -DisplayName “name-of-service-principal”).Id
+
 ## Notes
 
 The scripts are provided as-is without warranty of any kind, either expressed or implied, including any implied warranties of fitness for a particular purpose, mechantability, or non-infringement.
