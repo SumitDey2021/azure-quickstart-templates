@@ -29,7 +29,7 @@ None
 
 ## Deployment steps
 
-You can click the "deploy to Azure" button at the beginning of this document.
+You can click the "Deploy to Azure" button at the beginning of this document.
 
 ## Notes
 
