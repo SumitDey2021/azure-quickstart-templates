@@ -1,9 +1,9 @@
 {
   "$schema": "https://aka.ms/azure-quickstart-templates-metadata-schema#",
   "type": "QuickStart",
-  "itemDisplayName": "SAP ILM Store template",
-  "description": "This template deploys a SAP ILM Store on a Microsoft Azure Storage Account. The SAP ILM Store is a **description**. For more information about SAP ILM Store, see **link**.",
-  "summary": "This template deploys a SAP ILM Store on a Microsoft Azure Storage Account.",
+  "itemDisplayName": "Deploy a Storage Account for SAP ILM Store",
+  "description": "This template deploys a Microsoft Azure Storage Account to be used as a SAP ILM Store. The SAP ILM Store is a **description**. For more information about SAP ILM Store, see **link**.",
+  "summary": "This template deploys a Microsoft Azure Storage Account to be used as a SAP ILM Store.",
   "githubUsername": "SumitDeySAP",
   "dateUpdated": "2021-05-31"
 }
