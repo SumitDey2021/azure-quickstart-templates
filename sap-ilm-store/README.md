@@ -29,10 +29,10 @@ None
 
 ## Deployment steps
 
-You can click the "Deploy to Azure" button at the beginning of this document.
+Click the "Deploy to Azure" button at the beginning of this document.
 
 ## Notes
 
-The scripts are provided as is without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, mechantability, or non-infringement.
+The scripts are provided as-is without warranty of any kind, either expressed or implied, including any implied warranties of fitness for a particular purpose, mechantability, or non-infringement.
 
 `Tags: SAP, ILM, Store`
