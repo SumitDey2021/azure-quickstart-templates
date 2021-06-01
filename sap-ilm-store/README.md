@@ -1,4 +1,4 @@
-# SAP ILM Store
+# Deploy a Storage Account for SAP ILM Store
 
 ![Azure Public Test Date](https://azurequickstartsservice.blob.core.windows.net/badges/path-to-sample/PublicLastTestDate.svg)
 ![Azure Public Test Result](https://azurequickstartsservice.blob.core.windows.net/badges/path-to-sample/PublicDeployment.svg)
