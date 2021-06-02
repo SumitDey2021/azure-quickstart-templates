@@ -34,9 +34,9 @@ Click the [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quic
 For the parameter **"Principal ID of the Azure Active Directory Application"**, run the following command to get the Principal ID. 
 Replace `name-of-service-principal` with the name of the Azure Active Directory Application.
 
-**PowerShell:** `(Get-AzADServicePrincipal -DisplayName “name-of-service-principal”).Id`
+**PowerShell:** `(Get-AzADServicePrincipal -DisplayName "name-of-service-principal").Id`
 
-**Command Line:** `az ad sp list --display-name “name-of-service-principal” --query "[].objectId" --output tsv`
+**Command Line:** `az ad sp list --display-name "svc-AIS-ilmstore" --query "[].objectId" --output tsv`
 
 ## Notes
 
