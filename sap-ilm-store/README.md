@@ -36,7 +36,7 @@ Replace `name-of-service-principal` with the name of the Azure Active Directory 
 
 **PowerShell:** `(Get-AzADServicePrincipal -DisplayName "name-of-service-principal").Id`
 
-**Command Line:** `az ad sp list --display-name "svc-AIS-ilmstore" --query "[].objectId" --output tsv`
+**Command Line:** `az ad sp list --display-name "name-of-service-principal" --query "[].objectId" --output tsv`
 
 ## Notes
 
