@@ -25,18 +25,16 @@ The following steps are executed as a part of the solution:
 
 ## Prerequisites
 
-None
-
-## Deployment steps
-
-Click the [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://github.com/SumitDeySAP/azure-quickstart-templates/tree/patch-1/sap-ilm-store#deploy-a-storage-account-for-sap-ilm-store) button at the beginning of this document.
-
 For the parameter **"Principal ID of the Azure Active Directory Application"**, run the following command to get the Principal ID. 
 Replace `name-of-service-principal` with the name of the Azure Active Directory Application that you intend to enable for SAP ILM access to the Microsoft Azure Storage Account.
 
 **PowerShell:** `(Get-AzADServicePrincipal -DisplayName "name-of-service-principal").Id`
 
 **Command Line:** `az ad sp list --display-name "name-of-service-principal" --query "[].objectId" --output tsv`
+
+## Deployment steps
+
+Click the [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://github.com/SumitDeySAP/azure-quickstart-templates/tree/patch-1/sap-ilm-store#deploy-a-storage-account-for-sap-ilm-store) button at the beginning of this document.
 
 ## Notes
 
