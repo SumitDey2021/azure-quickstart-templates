@@ -17,7 +17,7 @@ This template deploys a SAP Information Lifecycle Magagement (ILM) Store on a Mi
 
 ## Overview and deployed resources
 
-The following steps are executed as a part of the solution
+The following steps are executed as a part of the solution:
 
 + Deployment of a Microsoft Azure Storage Account
 + Creation of a Custom Role for restricting access to the Microsoft Azure Storage Account
@@ -32,7 +32,7 @@ None
 Click the [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://github.com/SumitDeySAP/azure-quickstart-templates/tree/patch-1/sap-ilm-store#deploy-a-storage-account-for-sap-ilm-store) button at the beginning of this document.
 
 For the parameter **"Principal ID of the Azure Active Directory Application"**, run the following command to get the Principal ID. 
-Replace `name-of-service-principal` with the name of the Azure Active Directory Application.
+Replace `name-of-service-principal` with the name of the Azure Active Directory Application that you intend to enable for SAP ILM access to the Microsoft Azure Storage Account.
 
 **PowerShell:** `(Get-AzADServicePrincipal -DisplayName "name-of-service-principal").Id`
 
@@ -42,4 +42,4 @@ Replace `name-of-service-principal` with the name of the Azure Active Directory 
 
 The scripts are provided as-is without warranty of any kind, either expressed or implied, including any implied warranties of fitness for a particular purpose, mechantability, or non-infringement.
 
-`Tags: SAP, ILM, Store`
+`Tags: SAP, Information Lifecycle Magagement, ILM, Store`
