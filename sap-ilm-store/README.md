@@ -32,6 +32,8 @@ Replace `name-of-service-principal` with the name of the Azure Active Directory 
 
 **Command Line:** `az ad sp list --display-name "name-of-service-principal" --query "[].objectId" --output tsv`
 
+**Note:** While most of the parameters have a default value, please make sure that you provide a new and unique value for the parameters **"Custom Role name for the Role Definition"** and **"Name of the Storage Account"**.
+
 ## Deployment steps
 
 Click the [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://github.com/SumitDeySAP/azure-quickstart-templates/tree/patch-1/sap-ilm-store#deploy-a-storage-account-for-sap-ilm-store) button at the beginning of this document.
@@ -39,5 +41,15 @@ Click the [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quic
 ## Notes
 
 The scripts are provided as-is without warranty of any kind, either expressed or implied, including any implied warranties of fitness for a particular purpose, mechantability, or non-infringement.
+
+## Error Handling
+
+During the Preflight validation of the deployment, if you get an error with code `StorageAccountAlreadyTaken`, then it is likely that the Storage Account name that you have currently chosen for the parameter **"Name of the Storage Account"** is already in use. Please select a new unique value for this parameter and try again.
+
+During the deployment, if you get an error with code `RoleScopeBeingRemovedContainsAssignments`, then it is likely that the name of the Custom Role that you have currently chosen for the parameter **"Custom Role name for the Role Definition"** is already in use. Please select a new unique value for this parameter and try again.
+
+During the deployment, if you get an error with code `InvalidPrincipalId`, then it is likely that the Principal Id provided for the parameter **"Principal ID of the Azure Active Directory Application"** is either empty of incorrect. Please refer to the [![Prerequisites]](https://github.com/SumitDeySAP/azure-quickstart-templates/tree/patch-1/sap-ilm-store#Prerequisites) section above to determine the correct value for this parameter.
+
+For other errors, please refer to Microsoft documentation.
 
 `Tags: SAP, Information Lifecycle Magagement, ILM, Store`
