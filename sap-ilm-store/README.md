@@ -40,11 +40,11 @@ Click the [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quic
 
 ## Error Handling
 
-During the Preflight validation of the deployment, if you get an error with code `StorageAccountAlreadyTaken`, then it is likely that the Storage Account name that you have currently chosen for the parameter **"Name of the Storage Account"** is already in use. Please select a new unique value for this parameter and try again.
+During the Preflight validation of the deployment, if you get an error with code `StorageAccountAlreadyTaken` or message `The storage account named <<value>> is already taken.`, then it is likely that the Storage Account name that you have currently chosen for the parameter **"Name of the Storage Account"** is already in use. Please select a new unique value for this parameter and try again.
 
-During the deployment, if you get an error with code `RoleScopeBeingRemovedContainsAssignments`, then it is likely that the name of the Custom Role that you have currently chosen for the parameter **"Custom Role name for the Role Definition"** is already in use. Please select a new unique value for this parameter and try again.
+During the deployment, if you get an error with code `RoleScopeBeingRemovedContainsAssignments` or message `Role assignments found under scope '/subscriptions/<<value>>/resourcegroups/<<value>>' which is being removed. Removing this scope from the role will orphan these assignments. Delete these assignments before removing the scope.`, then it is likely that the name of the Custom Role that you have currently chosen for the parameter **"Custom Role name for the Role Definition"** is already in use. Please select a new unique value for this parameter and try again.
 
-During the deployment, if you get an error with code `InvalidPrincipalId`, then it is likely that the Principal Id provided for the parameter **"Principal ID of the Azure Active Directory Application"** is either empty of incorrect. Please refer to the [Prerequisites section](https://github.com/SumitDeySAP/azure-quickstart-templates/tree/patch-1/sap-ilm-store#Prerequisites) above to determine the correct value for this parameter.
+During the deployment, if you get an error with code `InvalidPrincipalId` or message `A valid principal ID must be provided for role assignment.`, then it is likely that the Principal Id provided for the parameter **"Principal ID of the Azure Active Directory Application"** is either empty of incorrect. Please refer to the [Prerequisites section](https://github.com/SumitDeySAP/azure-quickstart-templates/tree/patch-1/sap-ilm-store#Prerequisites) above to determine the correct value for this parameter.
 
 For other errors, please refer to Microsoft documentation.
 
