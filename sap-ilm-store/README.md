@@ -60,7 +60,7 @@ Some of the errors are listed below:
 - **Error Description:** `A valid principal ID must be provided for role assignment`
 - **Deployment phase:** Deployment
 - **Description:** It is likely that the Principal Id provided for the parameter "Principal ID of the Azure Active Directory Application" is either empty or incorrect.
-- **Solution:** Please refer to the Prerequisites section above to determine the correct value for this parameter.
+- **Solution:** Please refer to the [Prerequisites section](https://github.com/SumitDeySAP/azure-quickstart-templates/tree/patch-1/sap-ilm-store#prerequisites) above to determine the correct value for this parameter.
 
 ## Notes
 
