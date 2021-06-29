@@ -40,9 +40,10 @@ Click the [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quic
 
 ## Error Handling
 
-For deployment errors raised with Azure Resource Manager, please refer to the Microsoft Documentation [Troubleshoot common Azure deployment errors with Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/common-deployment-errors#find-error-code).
+For deployment errors raised with Azure Resource Manager, please refer to the Microsoft Documentation [Troubleshoot common Azure deployment errors with Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/common-deployment-errors).
 
 Some of the errors are listed below:
+
 
 **Error code:** `StorageAccountAlreadyTaken`
 
@@ -53,6 +54,7 @@ Some of the errors are listed below:
 **Description:** It is likely that the Storage Account name that you have currently chosen for the parameter "Name of the Storage Account" is already in use. 
 
 **Solution:** Please select a new unique value for this parameter and try again.
+
 
 
 **Error code:** `RoleScopeBeingRemovedContainsAssignments`
@@ -66,6 +68,7 @@ Some of the errors are listed below:
 **Solution:** Please select a new unique value for this parameter and try again.
 
 
+
 **Error code:** `InvalidPrincipalId`
 
 **Error Description:** `A valid principal ID must be provided for role assignment`
@@ -75,6 +78,8 @@ Some of the errors are listed below:
 **Description:** It is likely that the Principal Id provided for the parameter "Principal ID of the Azure Active Directory Application" is either empty or incorrect.
 
 **Solution:** Please refer to the Prerequisites section above to determine the correct value for this parameter.
+
+
 
 ## Notes
 
