@@ -50,30 +50,17 @@ Some of the errors are listed below:
 - **Description:** It is likely that the Storage Account name that you have currently chosen for the parameter "Name of the Storage Account" is already in use. 
 - **Solution:** Please select a new unique value for this parameter and try again.
 
-
 **Error code:** `RoleScopeBeingRemovedContainsAssignments`
-
-**Error Description:** `Role assignments found under scope '/subscriptions/<<value>>/resourcegroups/<<value>>' which is being removed. Removing this scope from the role will orphan these assignments. Delete these **assignments before removing the scope`
-
-**Deployment phase:** Deployment
-
-**Description:** It is likely that the name of the Custom Role that you have currently chosen for the parameter "Custom Role name for the Role Definition" is already in use.
-
-**Solution:** Please select a new unique value for this parameter and try again.
-
-
+- **Error Description:** `Role assignments found under scope '/subscriptions/<<value>>/resourcegroups/<<value>>' which is being removed. Removing this scope from the role will orphan these assignments. Delete these **assignments before removing the scope`
+- **Deployment phase:** Deployment
+- **Description:** It is likely that the name of the Custom Role that you have currently chosen for the parameter "Custom Role name for the Role Definition" is already in use.
+- **Solution:** Please select a new unique value for this parameter and try again.
 
 **Error code:** `InvalidPrincipalId`
-
-**Error Description:** `A valid principal ID must be provided for role assignment`
-
-**Deployment phase:** Deployment
-
-**Description:** It is likely that the Principal Id provided for the parameter "Principal ID of the Azure Active Directory Application" is either empty or incorrect.
-
-**Solution:** Please refer to the Prerequisites section above to determine the correct value for this parameter.
-
-
+- **Error Description:** `A valid principal ID must be provided for role assignment`
+- **Deployment phase:** Deployment
+- **Description:** It is likely that the Principal Id provided for the parameter "Principal ID of the Azure Active Directory Application" is either empty or incorrect.
+- **Solution:** Please refer to the Prerequisites section above to determine the correct value for this parameter.
 
 ## Notes
 
