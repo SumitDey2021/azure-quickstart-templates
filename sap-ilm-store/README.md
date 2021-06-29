@@ -51,7 +51,7 @@ Some of the errors are listed below:
 - **Solution:** Please select a new unique value for this parameter and try again.
 
 **Error code:** `RoleScopeBeingRemovedContainsAssignments`
-- **Error Description:** `Role assignments found under scope '/subscriptions/<<value>>/resourcegroups/<<value>>' which is being removed. Removing this scope from the role will orphan these assignments. Delete these **assignments before removing the scope`
+- **Error Description:** `Role assignments found under scope '/subscriptions/<<value>>/resourcegroups/<<value>>' which is being removed. Removing this scope from the role will orphan these assignments. Delete these assignments before removing the scope`
 - **Deployment phase:** Deployment
 - **Description:** It is likely that the name of the Custom Role that you have currently chosen for the parameter "Custom Role name for the Role Definition" is already in use.
 - **Solution:** Please select a new unique value for this parameter and try again.
