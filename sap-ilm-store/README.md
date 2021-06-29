@@ -44,6 +44,8 @@ For deployment errors raised with Azure Resource Manager, please refer to the Mi
 
 Some of the errors are listed below:
 
+First Header | Second Header
+------------ | -------------
 **Error code:**|`StorageAccountAlreadyTaken`
 **Error Description:**|`The storage account named <<value>> is already taken`
 **Deployment phase:**|Preflight validation
