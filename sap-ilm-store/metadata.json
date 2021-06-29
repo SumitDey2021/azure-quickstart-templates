@@ -5,5 +5,5 @@
   "description": "This template deploys a Microsoft Storage Account which can be integrated with a SAP Information Lifecycle Magagement (ILM) Store. A ILM Store is a component which fulfills the requirements of SAP ILM compliant storage systems. One can store archive files in a storage media using WebDAV interface standards while making use of SAP ILM Retention Management rules. For more information about SAP ILM Store, refer to the SAP Help Portal.",
   "summary": "This template deploys a Microsoft Storage Account which can be integrated with a SAP Information Lifecycle Magagement (ILM) Store.",
   "githubUsername": "SumitDeySAP",
-  "dateUpdated": "2021-05-31"
+  "dateUpdated": "2021-06-29"
 }
