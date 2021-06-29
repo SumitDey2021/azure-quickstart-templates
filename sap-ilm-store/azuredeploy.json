@@ -10,14 +10,14 @@
     },
     "customRoleName": {
       "type": "string",
-      "defaultValue": "SAP ILM Storage Data Contributor",
+      "defaultValue": "<<SAP ILM Storage Data Contributor>>",
       "metadata": {
         "description": "Custom Role name for the Role Definition"
       }
     },
     "storageAccountName": {
       "type": "string",
-      "defaultValue": "sapilmstore",
+      "defaultValue": "<<sapilmstore>>",
       "metadata": {
         "description": "Name of the Storage Account"
       }
