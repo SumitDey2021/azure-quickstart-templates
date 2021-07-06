@@ -3,25 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "AzureADAppPrincipalID": {
-      "value": ""
+      "value": "GEN-UNIQUE"
     },
     "customRoleName": {
-      "value": "<<SAP ILM Storage Data Contributor>>"
+      "value": "GEN-UNIQUE"
     },
     "storageAccountName": {
-      "value": "<<sapilmstore>>"
-    },
-    "storageSKUName": {
-      "value": "Standard_RAGRS"
-    },
-    "storageSKUTier": {
-      "value": "Standard"
-    },
-    "storageKind": {
-      "value": "StorageV2"
-    },
-    "accessTier": {
-      "value": "Hot"
+      "value": "GEN-UNIQUE"
     }
   }
 }
