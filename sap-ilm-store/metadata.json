@@ -2,7 +2,7 @@
   "$schema": "https://aka.ms/azure-quickstart-templates-metadata-schema#",
   "type": "QuickStart",
   "itemDisplayName": "Deploy a Storage Account for SAP ILM Store",
-  "description": "This template deploys a Microsoft Storage Account which can be integrated with a SAP Information Lifecycle Magagement (ILM) Store. A ILM Store is a component which fulfills the requirements of SAP ILM compliant storage systems. One can store archive files in a storage media using WebDAV interface standards while making use of SAP ILM Retention Management rules. For more information about SAP ILM Store, refer to the <a href="https://www.sap.com"> SAP Help Portal </a>.",
+  "description": "This template deploys a Microsoft Storage Account which can be integrated with a SAP Information Lifecycle Magagement (ILM) Store. A ILM Store is a component which fulfills the requirements of SAP ILM compliant storage systems. One can store archive files in a storage media using WebDAV interface standards while making use of SAP ILM Retention Management rules. For more information about SAP ILM Store, refer to the <a href='https://www.sap.com'> SAP Help Portal </a>.",
   "summary": "This template deploys a Microsoft Storage Account which can be integrated with a SAP Information Lifecycle Magagement (ILM) Store.",
   "githubUsername": "SumitDeySAP",
   "dateUpdated": "2021-07-06"
