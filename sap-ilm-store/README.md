@@ -32,7 +32,7 @@ Replace `name-of-service-principal` with the name of the Azure Active Directory 
 
 **Command Line:** `az ad sp list --display-name "name-of-service-principal" --query "[].objectId" --output tsv`
 
-**Note:** While most of the parameters have a default value, please make sure that you provide a new and unique value for the parameters **"Custom Role name for the Role Definition"** and **"Name of the Storage Account"**.
+**Note:** While most of the parameters have a default value, please make sure that you provide a new and unique value for the parameters **"Role name for the new Custom Role Definition"** and **"Name of the Storage Account"**.
 
 ## Deployment steps
 
@@ -47,19 +47,19 @@ Some of the errors are listed below:
 **Error code:** `StorageAccountAlreadyTaken`
 - **Error Description:** `The storage account named <<value>> is already taken`
 - **Deployment phase:** Preflight validation
-- **Details:** It is likely that the Storage Account name that you have currently chosen for the parameter "Name of the Storage Account" is already in use. 
+- **Details:** It is likely that the Storage Account name that you have currently chosen for the parameter **"Name of the Storage Account"** is already in use. 
 - **Solution:** Please select a new unique value for this parameter and try again.
 
 **Error code:** `RoleScopeBeingRemovedContainsAssignments`
 - **Error Description:** `Role assignments found under scope '/subscriptions/<<value>>/resourcegroups/<<value>>' which is being removed. Removing this scope from the role will orphan these assignments. Delete these assignments before removing the scope`
 - **Deployment phase:** Deployment
-- **Details:** It is likely that the name of the Custom Role that you have currently chosen for the parameter "Custom Role name for the Role Definition" is already in use.
+- **Details:** It is likely that the name of the Custom Role that you have currently chosen for the parameter **"Role name for the new Custom Role Definition"** is already in use.
 - **Solution:** Please select a new unique value for this parameter and try again.
 
 **Error code:** `InvalidPrincipalId`
 - **Error Description:** `A valid principal ID must be provided for role assignment`
 - **Deployment phase:** Deployment
-- **Details:** It is likely that the Principal Id provided for the parameter "Principal ID of the Azure Active Directory Application" is either empty or incorrect.
+- **Details:** It is likely that the Principal Id provided for the parameter **"Principal ID of the Azure Active Directory Application"** is either empty or incorrect.
 - **Solution:** Please refer to the [Prerequisites section](https://github.com/SumitDeySAP/azure-quickstart-templates/tree/patch-1/sap-ilm-store#prerequisites) above to determine the correct value for this parameter.
 
 ## Notes
