@@ -2,16 +2,34 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "AzureADAppPrincipalID": {
+    "azureADAppPrincipalID": {
       "type": "string",
       "metadata": {
         "description": "Principal ID of the Azure Active Directory Application"
       }
     },
+    "newOrExistingRole": {
+      "type": "string",
+      "defaultValue": "existing",
+      "metadata": {
+        "description": "Use an existing Role or create a new custom Role Definition"
+      },
+      "allowedValues": [
+        "new",
+        "existing"
+      ]
+    },
+    "existingRoleID": {
+      "type": "string",
+      "defaultValue": "ba92f5b4-2d11-453d-a403-e96b0029c9fe",
+      "metadata": {
+        "description": "Role ID of an existing Role Definition"
+      }
+    },
     "customRoleName": {
       "type": "string",
       "metadata": {
-        "description": "Custom Role name for the Role Definition"
+        "description": "Role name for the new Role Definition"
       }
     },
     "storageAccountName": {
@@ -104,6 +122,7 @@
       }
     },
     {
+      "condition": "[equals(parameters('newOrExistingRole'),'new')]",
       "type": "Microsoft.Authorization/roleDefinitions",
       "apiVersion": "2018-07-01",
       "name": "[variables('roleDefinitionId')]",
@@ -138,8 +157,8 @@
         "[resourceId('Microsoft.Authorization/roleDefinitions/', variables('roleDefinitionId'))]"
       ],
       "properties": {
-        "roleDefinitionId": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', variables('roleDefinitionId'))]",
-        "principalId": "[parameters('AzureADAppPrincipalID')]",
+        "roleDefinitionId": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', if(equals(parameters('newOrExistingRole'), 'new'), variables('roleDefinitionId'), parameters('existingRoleID')))]",
+        "principalId": "[parameters('azureADAppPrincipalID')]",
         "principalType": "ServicePrincipal"
       }
     }
@@ -153,9 +172,9 @@
       "type": "string",
       "value": "[reference(parameters('storageAccountName')).primaryEndpoints.blob]"
     },
-    "CustomRoleName": {
+    "RoleDefinition": {
       "type": "string",
-      "value": "[parameters('customRoleName')]"
+      "value": "[if(equals(parameters('newOrExistingRole'), 'new'), parameters('customRoleName'), parameters('existingRoleID'))]"
     }
   }
 }
