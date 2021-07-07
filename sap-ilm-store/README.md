@@ -25,12 +25,8 @@ The following steps are executed as a part of the solution:
 
 ## Prerequisites
 
-### Parameter: Principal ID of the Azure Active Directory Application
-Run the following command to get the Principal ID. Replace `name-of-service-principal` with the name of the Azure Active Directory Application that you intend to enable for SAP ILM access to the Microsoft Azure Storage Account.
-
-**PowerShell:** `(Get-AzADServicePrincipal -DisplayName "name-of-service-principal").Id`
-
-**Command Line:** `az ad sp list --display-name "name-of-service-principal" --query "[].objectId" --output tsv`
+### Parameter: Use an existing Role or create a new custom Role Definition
+You can decide to either use an existing Role definition or create a new custom Role Definition using this parameter. If you wish to use an existing Role definition, then use the parameter **"Role ID of an existing Role Definition"** to provide the corresponding Role ID. Refer to the next section to find out how to fetch the value. If you wish to create a new custom Role, then use the parameter **"Role name for the new Custom Role Definition"** to provide a name for the new Custom Role Definition.
 
 ### Parameter: Role ID of an existing Role Definition
 Run the following command to get the Role ID for an existing Role Definition. Replace `role-name` with the name of existing Role Definition (standard or custom) that you intend to assign to the Service Principal to access the Microsoft Azure Storage Account.
@@ -39,6 +35,12 @@ Run the following command to get the Role ID for an existing Role Definition. Re
 
 **Command Line:** `az role definition list --name "role-name" --query "[].name" --output tsv`
 
+### Parameter: Principal ID of the Azure Active Directory Application
+Run the following command to get the Principal ID. Replace `name-of-service-principal` with the name of the Azure Active Directory Application that you intend to enable for SAP ILM access to the Microsoft Azure Storage Account.
+
+**PowerShell:** `(Get-AzADServicePrincipal -DisplayName "name-of-service-principal").Id`
+
+**Command Line:** `az ad sp list --display-name "name-of-service-principal" --query "[].objectId" --output tsv`
 
 ### Other Parameters
 While most of the parameters have a default value, please make sure that you provide a new and unique value for the parameters **"Role name for the new Custom Role Definition"** and **"Name of the Storage Account"**.
