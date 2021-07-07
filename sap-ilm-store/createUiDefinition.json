@@ -192,8 +192,15 @@
       }
     ],
     "outputs": {
-      "storageAccountNamePrefix": "[basics.textBox1]",
-      "storageAccountType": "[basics.textBox2]",
+      "azureADAppPrincipalID": "[steps('settings').AzureADApp.azureADAppPrincipalID]",
+      "newOrExistingRole": "[steps('settings').roleSection.newOrExistingRole]",
+      "existingRoleID": "[steps('settings').roleSection.existingRoleID]",
+      "customRoleName": "[steps('settings').roleSection.customRoleName]",
+      "storageAccountName": "[steps('settings').storageAccount.storageSKUName.prefix]",
+      "storageSKUName": "[steps('settings').storageAccount.storageSKUName.type]",
+      "storageSKUTier": "[steps('settings').storageAccount.storageSKUTier]",
+      "storageKind": "[steps('settings').storageAccount.storageKind]",
+      "accessTier": "[steps('settings').storageAccount.accessTier]",
       "location": "[location()]"
     }
   }
