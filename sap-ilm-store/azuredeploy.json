@@ -29,7 +29,7 @@
     "customRoleName": {
       "type": "string",
       "metadata": {
-        "description": "Role name for the new Role Definition"
+        "description": "Role name for the new Custom Role Definition"
       }
     },
     "storageAccountName": {
