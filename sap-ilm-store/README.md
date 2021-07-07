@@ -32,6 +32,13 @@ Replace `name-of-service-principal` with the name of the Azure Active Directory 
 
 **Command Line:** `az ad sp list --display-name "name-of-service-principal" --query "[].objectId" --output tsv`
 
+For the parameter **"Role ID of an existing Role Definition"**, run the following command to get the Role ID for an existing Role Definition. 
+Replace `role-name` with the name of existing Role Definition (standard or custom) that you intend to assign to the Service Principal to access the Microsoft Azure Storage Account.
+
+**PowerShell:** `(Get-AzRoleDefinition -Name "role-name").Id`
+
+**Command Line:** `az role definition list --name "role-name" --query "[].name" --output tsv`
+
 **Note:** While most of the parameters have a default value, please make sure that you provide a new and unique value for the parameters **"Role name for the new Custom Role Definition"** and **"Name of the Storage Account"**.
 
 ## Deployment steps
