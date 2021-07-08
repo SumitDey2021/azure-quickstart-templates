@@ -41,12 +41,12 @@
                 "name": "newOrExistingRole",
                 "type": "Microsoft.Common.OptionsGroup",
                 "label": "Role Definition",
-                "defaultValue": "Existing Role (Standard or Custom)",
+                "defaultValue": "Existing Role (built-in or Custom)",
                 "toolTip": "Use an existing Role or create a new custom Role Definition",
                 "constraints": {
                   "allowedValues": [
                     {
-                      "label": "Existing Role (Standard or Custom)",
+                      "label": "Existing Role (built-in or Custom)",
                       "value": "existing"
                     },
                     {
