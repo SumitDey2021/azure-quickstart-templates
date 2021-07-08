@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "azureADAppPrincipalID": {
-      "value": "GEN-UNIQUE"
+      "value": "GET-PREREQ-principalid"
     },
     "customRoleName": {
       "value": "GEN-UNIQUE"
