@@ -21,7 +21,7 @@
     }
   ],
   "outputs": {
-    "PrincipalID": {
+    "principalid": {
       "type": "string",
       "value": "[reference(parameters('identityName')).principalId]"
     }
