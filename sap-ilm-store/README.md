@@ -39,15 +39,15 @@ Run the following command to get the Role ID for an existing Role Definition. Re
 
 **Command Line:** `az role definition list --name "role-name" --query "[].name" --output tsv`
 
+### Parameter: Name for a new Custom Role
+Ensure that you provide a new and unique value for this parameter.
+
 ### Parameter: Principal ID of the Azure AD App
 Run the following command to get the Principal ID of an Azure Active Directory Application. Replace `name-of-service-principal` with the name of an Azure Active Directory Application. This application will enable  the SAP ILM access to the Microsoft Azure Storage Account.
 
 **PowerShell:** `(Get-AzADServicePrincipal -DisplayName "name-of-service-principal").Id`
 
 **Command Line:** `az ad sp list --display-name "name-of-service-principal" --query "[].objectId" --output tsv`
-
-### Other Parameters
-While most of the parameters have a default value, please make sure that you provide a new and unique value for the parameter **"Name for a new Custom Role"**.
 
 ## Deployment steps
 
