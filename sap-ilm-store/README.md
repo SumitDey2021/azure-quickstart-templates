@@ -33,14 +33,14 @@ To use an existing Role definition, use the parameter **"Role ID of an existing 
 To create a new custom Role, use the parameter **"Name for a new Custom Role"** to provide a name for a new Custom Role Definition.
 
 ### Parameter: Role ID of an existing Role
-Run the following command to get the Role ID for an existing Role Definition. Replace `role-name` with the name of existing Role Definition that you intend to assign to the Service Principal to access the Microsoft Azure Storage Account.
+Run the following command to get the Role ID for an existing Role Definition. Replace `role-name` with the name of an existing Role Definition. This role would be assigned to the Service Principal which is used to access the Microsoft Azure Storage Account.
 
 **PowerShell:** `(Get-AzRoleDefinition -Name "role-name").Id`
 
 **Command Line:** `az role definition list --name "role-name" --query "[].name" --output tsv`
 
 ### Parameter: Principal ID of the Azure AD App
-Run the following command to get the Principal ID of an Azure Active Directory Application. Replace `name-of-service-principal` with the name of the Azure Active Directory Application that you intend to enable for SAP ILM access to the Microsoft Azure Storage Account.
+Run the following command to get the Principal ID of an Azure Active Directory Application. Replace `name-of-service-principal` with the name of an Azure Active Directory Application. This application will enable  the SAP ILM access to the Microsoft Azure Storage Account.
 
 **PowerShell:** `(Get-AzADServicePrincipal -DisplayName "name-of-service-principal").Id`
 
