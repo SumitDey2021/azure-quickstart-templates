@@ -26,24 +26,24 @@ The following steps are executed as a part of this Quickstart Template:
 ## Prerequisites
 
 ### Parameter: Use an existing Role or create a new custom Role Definition
-You can decide to either use an existing Built-in or Custom Role definition or create a new custom Role Definition using this parameter. If you wish to use an existing Role definition, then use the parameter **"Role ID of an existing Role Definition"** to provide the corresponding Role ID. Refer to the next section to find out how to fetch the value. If you wish to create a new custom Role, then use the parameter **"Role name for the new Custom Role Definition"** to provide a name for the new Custom Role Definition.
+You can decide to either use an existing Built-in or Custom Role definition or create a new custom Role Definition using this parameter. If you wish to use an existing Role definition, then use the parameter **"Role ID of an existing Role"** to provide the corresponding Role ID. Refer to the next section to find out how to fetch the value. If you wish to create a new custom Role, then use the parameter **"Name for a new Custom Role"** to provide a name for a new Custom Role Definition.
 
-### Parameter: Role ID of an existing Role Definition
-Run the following command to get the Role ID for an existing Role Definition. Replace `role-name` with the name of existing Role Definition (standard or custom) that you intend to assign to the Service Principal to access the Microsoft Azure Storage Account.
+### Parameter: Role ID of an existing Role
+Run the following command to get the Role ID for an existing Role Definition. Replace `role-name` with the name of existing Role Definition that you intend to assign to the Service Principal to access the Microsoft Azure Storage Account.
 
 **PowerShell:** `(Get-AzRoleDefinition -Name "role-name").Id`
 
 **Command Line:** `az role definition list --name "role-name" --query "[].name" --output tsv`
 
-### Parameter: Principal ID of the Azure Active Directory Application
-Run the following command to get the Principal ID. Replace `name-of-service-principal` with the name of the Azure Active Directory Application that you intend to enable for SAP ILM access to the Microsoft Azure Storage Account.
+### Parameter: Principal ID of the Azure AD App
+Run the following command to get the Principal ID of an Azure Active Directory Application. Replace `name-of-service-principal` with the name of the Azure Active Directory Application that you intend to enable for SAP ILM access to the Microsoft Azure Storage Account.
 
 **PowerShell:** `(Get-AzADServicePrincipal -DisplayName "name-of-service-principal").Id`
 
 **Command Line:** `az ad sp list --display-name "name-of-service-principal" --query "[].objectId" --output tsv`
 
 ### Other Parameters
-While most of the parameters have a default value, please make sure that you provide a new and unique value for the parameters **"Role name for the new Custom Role Definition"** and **"Name of the Storage Account"**.
+While most of the parameters have a default value, please make sure that you provide a new and unique value for the parameter **"Name for a new Custom Role"**.
 
 ## Deployment steps
 
@@ -55,22 +55,16 @@ For deployment errors raised with Azure Resource Manager, please refer to the Mi
 
 Some of the errors are listed below:
 
-**Error code:** `StorageAccountAlreadyTaken`
-- **Error Description:** `The storage account named <<value>> is already taken`
-- **Deployment phase:** Preflight validation
-- **Details:** It is likely that the Storage Account name that you have currently chosen for the parameter **"Name of the Storage Account"** is already in use. 
-- **Solution:** Please select a new unique value for this parameter and try again.
-
 **Error code:** `RoleScopeBeingRemovedContainsAssignments`
 - **Error Description:** `Role assignments found under scope '/subscriptions/<<value>>/resourcegroups/<<value>>' which is being removed. Removing this scope from the role will orphan these assignments. Delete these assignments before removing the scope`
 - **Deployment phase:** Deployment
-- **Details:** It is likely that the name of the Custom Role that you have currently chosen for the parameter **"Role name for the new Custom Role Definition"** is already in use.
+- **Details:** It is likely that the name of the Custom Role that you have currently chosen for the parameter **"Name for a new Custom Role"** is already in use.
 - **Solution:** Please select a new unique value for this parameter and try again.
 
 **Error code:** `InvalidPrincipalId`
 - **Error Description:** `A valid principal ID must be provided for role assignment`
 - **Deployment phase:** Deployment
-- **Details:** It is likely that the Principal Id provided for the parameter **"Principal ID of the Azure Active Directory Application"** is either empty or incorrect.
+- **Details:** It is likely that the Principal Id provided for the parameter **"Principal ID of the Azure AD App"** is incorrect.
 - **Solution:** Please refer to the [Prerequisites section](https://github.com/SumitDeySAP/azure-quickstart-templates/tree/patch-1/sap-ilm-store#prerequisites) above to determine the correct value for this parameter.
 
 ## Notes
