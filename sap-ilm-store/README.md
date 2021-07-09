@@ -26,7 +26,9 @@ The following steps are executed as a part of this Quickstart Template:
 ## Prerequisites
 
 ### Parameter: Use an existing Role or create a new custom Role Definition
-You can decide to either use an existing Built-in or Custom Role definition or create a new custom Role Definition using this parameter. If you wish to use an existing Role definition, then use the parameter **"Role ID of an existing Role"** to provide the corresponding Role ID. Refer to the next section to find out how to fetch the value. If you wish to create a new custom Role, then use the parameter **"Name for a new Custom Role"** to provide a name for a new Custom Role Definition.
+You can decide to either use an existing Role definition or create a new custom Role Definition using this parameter.
+To use an existing Role definition, use the parameter **"Role ID of an existing Role"** to provide the corresponding Role ID. Refer to the next section to find out how to fetch the value. 
+To create a new custom Role, use the parameter **"Name for a new Custom Role"** to provide a name for a new Custom Role Definition.
 
 ### Parameter: Role ID of an existing Role
 Run the following command to get the Role ID for an existing Role Definition. Replace `role-name` with the name of existing Role Definition that you intend to assign to the Service Principal to access the Microsoft Azure Storage Account.
