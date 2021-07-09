@@ -13,20 +13,20 @@
 [![Deploy To Azure US Gov](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.svg?sanitize=true)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fpath-to-sample%2Fazuredeploy.json/createUIDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fpath-to-sample%2FcreateUiDefinition.json)
 [![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fpath-to-sample%2Fazuredeploy.json)
 
-This template deploys a Microsoft Storage Account which can be integrated with a SAP Information Lifecycle Magagement (ILM) Store. A ILM Store is a component which fulfills the requirements of SAP ILM compliant storage systems. One can store archive files in a storage media using WebDAV interface standards while making use of SAP ILM Retention Management rules. For more information about SAP ILM Store, refer to the [SAP Help Portal](https://help.sap.com/viewer/7ce8e5dc89d7407e8baa9de7b775f31f/703%20SP27/en-US).
+This template deploys a Microsoft Storage Account which can be integrated with a SAP Information Lifecycle Magagement (ILM) Store. An ILM Store is a component which fulfills the requirements of SAP ILM compliant storage systems. One can store Archive files in a storage media using WebDAV interface standards while making use of SAP ILM Retention Management rules. For more information about SAP ILM Store, refer to the [SAP Help Portal](https://help.sap.com/viewer/7ce8e5dc89d7407e8baa9de7b775f31f/703%20SP27/en-US).
 
 ## Overview and deployed resources
 
-The following steps are executed as a part of the solution:
+The following steps are executed as a part of this Quickstart Template:
 
 + Deployment of a Microsoft Azure Storage Account
-+ Using a standard Role or Creation of a Custom Role for restricting access to the Microsoft Azure Storage Account
-+ Assignment of the defined Role to a Microsoft Azure Active Directory Application
++ Using an existing Built-in (or Custom) Role or creation of a new Custom Role for restricting access to the Microsoft Azure Storage Account
++ Assignment of the identified Role to a Microsoft Azure Active Directory Application
 
 ## Prerequisites
 
 ### Parameter: Use an existing Role or create a new custom Role Definition
-You can decide to either use an existing Role definition or create a new custom Role Definition using this parameter. If you wish to use an existing Role definition, then use the parameter **"Role ID of an existing Role Definition"** to provide the corresponding Role ID. Refer to the next section to find out how to fetch the value. If you wish to create a new custom Role, then use the parameter **"Role name for the new Custom Role Definition"** to provide a name for the new Custom Role Definition.
+You can decide to either use an existing Built-in or Custom Role definition or create a new custom Role Definition using this parameter. If you wish to use an existing Role definition, then use the parameter **"Role ID of an existing Role Definition"** to provide the corresponding Role ID. Refer to the next section to find out how to fetch the value. If you wish to create a new custom Role, then use the parameter **"Role name for the new Custom Role Definition"** to provide a name for the new Custom Role Definition.
 
 ### Parameter: Role ID of an existing Role Definition
 Run the following command to get the Role ID for an existing Role Definition. Replace `role-name` with the name of existing Role Definition (standard or custom) that you intend to assign to the Service Principal to access the Microsoft Azure Storage Account.
