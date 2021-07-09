@@ -27,7 +27,9 @@ The following steps are executed as a part of this Quickstart Template:
 
 ### Parameter: Use an existing Role or create a new custom Role Definition
 You can decide to either use an existing Role definition or create a new custom Role Definition using this parameter.
+
 To use an existing Role definition, use the parameter **"Role ID of an existing Role"** to provide the corresponding Role ID. Refer to the next section to find out how to fetch the value. 
+
 To create a new custom Role, use the parameter **"Name for a new Custom Role"** to provide a name for a new Custom Role Definition.
 
 ### Parameter: Role ID of an existing Role
